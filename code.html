@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Addon Save File</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-lua.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            color: #9cdcfe;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>WoW Addon Save File Example (Lua to be converted to JSON for import)</h2>
+    <pre><code class="language-lua">
+["Is a Subatomic Particle-Zul'jin"] = {         -- Guild Name
+    ["Playername-Zul'jin"] = {                  -- Player Name
+        ["GUID"] = "Player-61-0C927665",
+        ["note"] = "",
+        ["customNote"] = {
+            true,
+            0,
+            "",
+            "",
+        },
+        ["zone"] = "Oribos",
+        ["class"] = "WARRIOR",
+        ["HC"] = {
+        ["isDead"] = false,
+        ["timeOfDeath"] = {
+            0,
+            0,
+            0,
+            0,
+            0,
+            false,
+        },
+        ["bannedInfo"] = {
+            false,
+            0,
+            false,
+            "",
+        },
+        ["status"] = 0,
+        ["level"] = 60,
+        ["joinDateUnknown"] = false,
+        ["rankName"] = "Cannon Fodder",
+        ["altsAtTimeOfLeaving"] = {
+        },
+        ["recommendToKick"] = true,
+        ["birthdayUnknown"] = false,
+        ["achievementPoints"] = 1280,
+        ["safeList"] = {
+        ["kick"] = {
+            false,
+            false,
+            0,
+            0,
+        },
+        ["demote"] = {
+            false,
+            false,
+            0,
+            0,
+        },
+        ["promote"] = {
+            false,
+            false,
+            0,
+            0,
+        },
+        ["lastOnlineTime"] = {
+            1,
+            2,
+            25,
+            3,
+        },
+        ["lastOnline"] = 10803,
+        ["isMobile"] = false,
+        ["recommendToPromote"] = false,
+        ["altGroup"] = "",
+        ["race"] = "BloodElf",
+        ["recommendToDemote"] = false,
+        ["promoteDateUnknown"] = false,
+        ["recommendSpecial"] = false,
+        ["isUnknown"] = false,
+        ["reasonBanned"] = "",
+        ["rankHist"] = {
+            {
+                "Cannon Fodder",
+                2,
+                11,
+                2022,
+                "20221102",
+                1667407915,
+                true,
+                1,
+            },
+            {
+                "Civilian",
+                2,
+                11,
+                2022,
+                "20221102",
+                1667407901,
+                true,
+                1,
+            },
+
+        },
+        ["joinDateHist"] = {
+            {
+                31,
+                8,
+                2024,
+                "20240831",
+                1725092902,
+                true,
+                2,
+            },
+            {
+                31,
+                8,
+                2024,
+                "20240831",
+                0,
+                false,
+                1,
+            },
+        },
+        ["sex"] = 3,
+        ["MythicScore"] = 0,
+        ["mainAtTimeOfLeaving"] = {
+        },
+        ["altGroupLeft"] = 0,
+        ["rankIndex"] = 9,
+        ["timeEnteredZone"] = 1667413548,
+        ["faction"] = 0,
+        ["officerNote"] = "Joined: 01 Aug '21 ",
+        ["isOnline"] = false,
+        ["guildRep"] = 5,
+        ["name"] = "Playername-Zul'jin"
+    }
+}
+    </code></pre>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Topping - WDD 330 - Siteplan Final Project - Warcraft Player and Guild Spotlight</title>
+
+    <!-- Google Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <meta name="description"
+        content="Aaron Topping - WDD 330 - Siteplan Final Project - Warcraft Player and Guild Spotlight">
+    <meta name="author" content="Aaron Topping">
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <!-- JS LOGIC -->
+    <script src="scripts/siteplan.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- META properties Facebook -->
+    <meta property="og:title" content="Aaron Topping">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegeneticsguy.github.io/wdd231/project/siteplan.html">
+    <meta property="og:image" content="https://thegeneticsguy.github.io/wdd231/images/Aaron.webp">
+    <meta property="og:description" content="WDD 330 Home Page">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aaron Topping">
+    <meta name="twitter:description" content="WDD 330 Home Page">
+    <meta name="twitter:image" content="https://thegeneticsguy.github.io/wdd231/images/Aaron.webp">
+    <meta name="twitter:url" content="https://thegeneticsguy.github.io/wdd231/project/siteplan.html">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1><a href="#" id="home" title="Home">Warcraft Player and Guild Spotlight</a>
+            </h1>
+        </div>
+
+        <h2>SITE PURPOSE BACKGROUND</h2>
+        <p>
+            I am a fairly popular World of Warcraft addon developer, as a hobby. My most popular addon is
+            <a href="https://github.com/TheGeneticsGuy/Guild-Roster-Manager" target="_blank">Guild Roster Manager</a>,
+            with close to 75,000 active unique users. This addon collects information on guilds as a whole and allows
+            leadership
+            an opportunity to more-easily manage their guild as it tracks changes to individual players, membership
+            issues, guild notable events, and other important information unique to the game.
+        </p>
+        <p>
+            One challenge that I have encountered is that the in-game available API is walled-off from the internet. As
+            such, useful information from the game company Blizzard's Web API is not available from within the game,
+            only their own limited toolset. This greatly hinders some more advance things that I want to do with the
+            data collected
+            in-game and saved to a Lua file.
+        </p>
+        <h3><strong>KEY PURPOSE</strong></h3>
+        <p>
+            I want to convert the Lua save variable file into a JSON compatible format, then I want to import that JSON
+            file information
+            my website so that a profile and analysis can be done on the details around the guild and/or the player. Of
+            note, since it
+            is slightly outside the scope of this assignment, the conversion of the desktop save file into a JSON format
+            will be done
+            externally so only a JSON will be imported. But, addon save data format can be <a href="code.html"
+                target="_blank">VIEWED
+                HERE</a>
+            After importing this data
+            I will be able to do the following:
+        </p>
+        <ul>
+            <li>Use an API of a Large Language Model (LLM) to write up a small player analysis on the data I feed it
+                imported from the JSON, adding thematic and Role-playing flare to it, for fun. This can be set to a
+                weekly schedule to update changes since previous week</li>
+            <li>Use the Blizzard Battle.net API to unify inaccessible data from within the game with the battle.net
+                Armory API with missing details (i-Lvl, alts, etc.)</li>
+            <li>STRETCH POSSIBILITY - Do a guild snapshot of all saved full guild data, not just player data with the
+                above features.</li>
+            <li>PAGE 2 - Warcraft Realms - Battle.net Web API demo to access Realm Activity Data</li>
+            <li>PAGE 3 - Details on the Guild Roster Manager addon and how why the addon matters for the site</li>
+        </ul>
+
+        <div id='header-purpose'>
+            <p></p>
+            <p><strong>Practical Usage #1:</strong>A fun way to get an AI LLM to do an analysis of your player, in an
+                RPG theme, combiend with real in-game data.</p>
+            <p><strong>Practical Usage #2:</strong>Web API integration with in-game accessible data has long been
+                requested by people on the official
+                <a href="https://discord.gg/wA7bPUfZuK" target="_blank">GRM Discord Server.</a> It is my number one most
+                requested feature. Implementing this will satisfy a lot of people.
+            </p>
+            <p><strong>Practical Usage #3:</strong>Laying the foundation here with being able to import the guild and
+                player data by way of a JSON file opens the door to
+                so many other possibilities, like being able to utilize the data for Discord bots, or other web
+                integrations. Creating my own API that can then be leveraged
+                by guilds who use this addon. For example, the most famous Warcraft e-gaming organization in the world,
+                <a href="https://www.method.gg/" target="_blank">METHOD</a>, uses this addon and it could be very useful
+                to integrate various in-game addon features to their website, though that is a project for another day.
+                The bones
+                and framework by building just this foundational, proof-of-concept site open the door to more advanced
+                features.
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="scenarios">
+            <h2>SCENARIOS</h2>
+            <p>Where can I get an LLM to write a fun analaysis on my own toon, or all of my alts?</p>
+            <p>Where can I get an LLM to write a fun analysis of the Guild as a whole and various updates or
+                accomplishes that occurred that week?</p>
+        </div>
+
+        <div class="colorChoices">
+            <h2>COLOR SCHEMA</h2>
+            <div class="colors">
+                <div class="circle circle1">
+                    <span class="colorText">#473D3A<br>Header Gradient Buttons</span>
+                </div>
+                <div class="circle circle2">
+                    <span class="colorText">#B25E39<br>Header and Footer</br></span>
+                </div>
+                <div class="circle circle3">
+                    <span class="colorText">#444444<br>Nav Background</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="typography">
+            <h2>TYPOGRAPHY</h2>
+            <p class="font1"><a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank">Google Font:
+                    Playfair</a></p>
+            <p class="font2"><a href="https://fonts.google.com/specimen/PT+Serif" target="_blank">Google Font: PT
+                    Serif</a></p>
+        </div>
+
+        <div class="wireframe">
+            <h2>WireFrame - Included for the AI Home Page and the Realms Page</h2>
+            <div class="wireframe2">
+                <p><a href="images/Desktop-View.webp" target="_blank">AI Home Page - Desktop</a></p>
+                <p><a href="images/Mobile-View.webp" target="_blank">AI Home Page - Mobile</a></p>
+            </div>
+            <div class="wireframe2">
+                <p><a href="images/wf-full.webp" target="_blank">Realms Page - Desktop</a></p>
+                <p><a href="images/wf-mobile.webp" target="_blank">Realms Page - Mobile</a></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span> | Aaron Topping | All rights reserved</p>
+    </footer>
+</body>
+
+</html>
